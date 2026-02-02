@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <!-- Basic Info -->
+            <section class="form-section">
+                <h2 class="section-title">Basic Info</h2>
+                <hr>
+                <div class="form-row">
+                    <label>Employee ID</label>
+                    <div class="input-wrapper">
+                        <input type="text" value="9" readonly>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Last Name</label>
+                    <div class="input-wrapper">
+                        <input type="text" value="Dodsworth">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>First Name</label>
+                    <div class="input-wrapper input-with-icon">
+                        <input type="text" value="Anne">
+                        <span class="icon icon-square"></span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Gender</label>
+                    <div class="input-wrapper radio-group">
+                        <label class="radio-label"><input type="radio" name="gender"> Male</label>
+                        <label class="radio-label"><input type="radio" name="gender"> Female</label>
+                        <label class="radio-label"><input type="radio" name="gender"> XXX</label>
+                        <label class="radio-label"><input type="radio" name="gender" checked> ZZZ</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Title</label>
+                    <div class="input-wrapper">
+                        <input type="text" value="Sales Representative">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Suffix</label>
+                    <div class="input-wrapper">
+                        <input type="text" value="Ms.">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>BirthDate</label>
+                    <div class="input-wrapper input-with-icon">
+                        <input type="text" value="1969-07-02 00:00:00">
+                        <span class="icon icon-help">(?)</span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>HireDate</label>
+                    <div class="input-wrapper">
+                        <input type="text" value="1994-11-15 00:00:00">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>SSN # (if applicable)</label>
+                    <div class="input-wrapper input-with-icon">
+                        <input type="text" placeholder="">
+                        <span class="icon icon-search">🔍</span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Reports To</label>
+                    <div class="input-wrapper">
+                        <select>
+                            <option selected>Buchanan</option>
+                            <option>Fuller</option>
+                            <option>Leverling</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Info -->
+            <section class="form-section">
+                <h2 class="section-title">Contact Info</h2>
+                <hr>
+                <div class="form-row">
+                    <label>Email</label>
+                    <div class="input-wrapper">
+                        <input type="email" value="name@example.com">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Address</label>
+                    <div class="input-wrapper">
+                        <input type="text" value="7 Houndstooth Rd.">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>City</label>
+                    <div class="input-wrapper">
+                        <input type="text" value="London">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Region</label>
+                    <div class="input-wrapper">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Postal Code</label>
+                    <div class="input-wrapper">
+                        <input type="text" value="WG2 7LT">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Country</label>
+                    <div class="input-wrapper">
+                        <select>
+                            <option selected>Russian Federation</option>
+                            <option>United Kingdom</option>
+                            <option>USA</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>US Home Phone</label>
+                    <div class="input-wrapper">
+                        <input type="tel" value="(234)234-2342">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Photo</label>
+                    <div class="input-wrapper">
+                        <input type="text" value="EmpID9.bmp">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Optional Info -->
+            <section class="form-section">
+                <h2 class="section-title">Optional Info</h2>
+                <hr>
+                <div class="form-row">
+                    <label>Notes</label>
+                    <div class="input-wrapper">
+                        <div class="editor-toolbar">
+                            <span class="tb-btn">B</span>
+                            <span class="tb-btn">I</span>
+                            <span class="tb-btn">S</span>
+                            <span class="tb-btn">U</span>
+                            <span class="tb-divider"></span>
+                            <span class="tb-btn">≡</span>
+                            <span class="tb-btn">≡</span>
+                            <span class="tb-btn">≡</span>
+                            <span class="tb-btn">≡</span>
+                            <span class="tb-divider"></span>
+                            <span class="tb-btn">•</span>
+                            <span class="tb-btn">1.</span>
+                            <span class="tb-btn">◀</span>
+                            <span class="tb-btn">▶</span>
+                            <span class="tb-divider"></span>
+                            <span class="tb-btn">x²</span>
+                            <span class="tb-btn">x₂</span>
+                            <span class="tb-btn">↶</span>
+                            <span class="tb-btn">↷</span>
+                            <span class="tb-divider"></span>
+                            <span class="tb-btn">🔗</span>
+                            <span class="tb-btn">🖼</span>
+                            <span class="tb-btn">H1</span>
+                            <span class="tb-btn">H2</span>
+                            <span class="tb-btn">H3</span>
+                            <span class="tb-btn tb-x">X</span>
+                        </div>
+                        <textarea class="rich-textarea">Anne has a BA degree in English from St. Lawrence College.
+She is fluent in French and German.ZZZ</textarea>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Preferred Shift</label>
+                    <div class="input-wrapper checkbox-group">
+                        <label class="checkbox-label"><input type="checkbox"> Regular</label>
+                        <label class="checkbox-label"><input type="checkbox" checked> Gravy Yard</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Active?</label>
+                    <div class="input-wrapper checkbox-group">
+                        <label class="checkbox-label"><input type="checkbox" checked></label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Are you human?</label>
+                    <div class="input-wrapper captcha-wrapper">
+                        <div class="captcha-row">
+                            <div class="captcha-image">TIDAWO</div>
+                            <span class="captcha-change">Click to change</span>
+                        </div>
+                        <input type="text" placeholder="">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <div class="form-footer">
+                <div class="footer-left">
+                    <div class="nav-controls">
+                        <span class="nav-btn">◀</span>
+                        <span class="nav-btn">▶</span>
+                    </div>
+                    <p class="required-note">* required</p>
+                </div>
+                <div class="button-group">
+                    <button type="submit" class="btn btn-submit">💾 Submit</button>
+                    <button type="button" class="btn btn-cancel">✕ Cancel</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
