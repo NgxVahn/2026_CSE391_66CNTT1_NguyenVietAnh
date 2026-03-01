@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bai1.css">
+    <title>BÀI 1</title> 
+</head>
+<body>
+    <div class="contact-wrapper">
+    <h2 class="contact-title">
+      Get in touch with us by filling contact form below
+    </h2>
+
+    <form class="contact-form" action="#" method="post">
+      <div class="row two-columns">
+        <input
+          type="text"
+          name="fullName"
+          placeholder="* Enter your full name"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="* Enter your email address"
+          required
+        />
+        </div>
+
+      <div class="row">
+        <input
+          type="text"
+          name="subject"
+          placeholder="Enter your subject"
+        />
+      </div>
+
+      <div class="row">
+        <textarea
+          name="message"
+          rows="12"
+          placeholder="* Your message here..."
+          required
+        ></textarea>
+      </div>
+
+      <div class="row form-footer">
+        <button type="submit" class="btn-send">Send message</button>
+        <span class="note">
+          * Please fill all required form field, thanks!
+        </span>
+      </div>
+    </form>
+  </div>
+    
+</body>
+</html>
