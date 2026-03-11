@@ -75,7 +75,7 @@ Trước khi bắt đầu, sinh viên tự ôn lại các khái niệm sau (tra 
 
 **Mô tả:** Nâng cấp bài 1.1 (hoặc tạo trang mới) với khả năng tìm kiếm và lọc dữ liệu theo thời gian thực.
 
-**Yêu cầu chức năng:**
+**Yêu cầu chức năng:** 
 
 1. **Tìm kiếm realtime**: Thêm ô tìm kiếm phía trên bảng. Khi người dùng gõ vào (`input` event), bảng lập tức chỉ hiển thị các hàng có tên **chứa chuỗi tìm kiếm** (không phân biệt hoa thường). Nếu không tìm thấy kết quả → hiển thị dòng chữ "Không có kết quả".
 
