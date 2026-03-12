@@ -7,48 +7,56 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form id="form">
-    <div>
-      <label>Họ và tên</label>
-      <input type="text" id="hoTen">
-      <span class="error" id="hoTenError"></span>
+  <div id="success" class="hidden"></div>
+
+  <form id="form">
+    <h2>Đăng ký</h2>
+
+    <div class="group">
+      <label for="fullName">Họ và tên</label>
+      <input id="fullName" type="text" />
+      <span id="fullNameError" class="error"></span>
     </div>
-    <div>
-      <label>Email</label>
-      <input type="text" id="email">
-      <span class="error" id="emailError"></span>
+
+    <div class="group">
+      <label for="email">Email</label>
+      <input id="email" type="email" />
+      <span id="emailError" class="error"></span>
     </div>
-    <div>
-      <label>Số điện thoại</label>
-      <input type="text" id="sdt" maxlength="10">
-      <span class="error" id="sdtError"></span>
+
+    <div class="group">
+      <label for="phone">Số điện thoại</label>
+      <input id="phone" type="text" />
+      <span id="phoneError" class="error"></span>
     </div>
-    <div>
-      <label>Mật khẩu</label>
-      <input type="password" id="mk">
-      <span class="error" id="mkError"></span>
+        <div class="group">
+      <label for="password">Mật khẩu</label>
+      <input id="password" type="password" />
+      <span id="passwordError" class="error"></span>
     </div>
-    <div>
-      <label>Xác nhận mật khẩu</label>
-      <input type="password" id="mk2">
-      <span class="error" id="mk2Error"></span>
+
+    <div class="group">
+      <label for="confirmPassword">Xác nhận mật khẩu</label>
+      <input id="confirmPassword" type="password" />
+      <span id="confirmPasswordError" class="error"></span>
     </div>
-     <div>
-      <label>Giới tính</label>
-      <input type="radio" name="gt" value="nam"> Nam
-      <input type="radio" name="gt" value="nu"> Nữ
-      <span class="error" id="gtError"></span>
+
+    <div class="group" id="gender">
+      <span>Giới tính</span><br />
+      <label><input type="radio" name="gender" value="male" /> Nam</label>
+      <label><input type="radio" name="gender" value="female" /> Nữ</label>
+      <span id="genderError" class="error"></span>
     </div>
-    <div>
-      <label><input type="checkbox" id="dk"> Đồng ý điều khoản</label>
-      <span class="error" id="dkError"></span>
+
+    <div class="group" id="terms">
+      <label>
+        <input type="checkbox" id="termsCheckbox" />
+        Tôi đồng ý điều khoản
+      </label>
+      <span id="termsError" class="error"></span>
     </div>
     <button type="submit">Đăng ký</button>
   </form>
-  <div id="ok" class="hidden">
-    <p>Đăng ký thành công! 🎉</p>
-    <p>Xin chào <strong id="ten"></strong></p>
-  </div>
   <script src="main.js"></script>
     
 </body>
