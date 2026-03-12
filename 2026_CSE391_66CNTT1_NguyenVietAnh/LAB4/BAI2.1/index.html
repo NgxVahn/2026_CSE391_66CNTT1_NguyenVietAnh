@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DANG KI TAI KHOAN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="form">
+    <div>
+      <label>Họ và tên</label>
+      <input type="text" id="hoTen">
+      <span class="error" id="hoTenError"></span>
+    </div>
+    <div>
+      <label>Email</label>
+      <input type="text" id="email">
+      <span class="error" id="emailError"></span>
+    </div>
+    <div>
+      <label>Số điện thoại</label>
+      <input type="text" id="sdt" maxlength="10">
+      <span class="error" id="sdtError"></span>
+    </div>
+    <div>
+      <label>Mật khẩu</label>
+      <input type="password" id="mk">
+      <span class="error" id="mkError"></span>
+    </div>
+    <div>
+      <label>Xác nhận mật khẩu</label>
+      <input type="password" id="mk2">
+      <span class="error" id="mk2Error"></span>
+    </div>
+     <div>
+      <label>Giới tính</label>
+      <input type="radio" name="gt" value="nam"> Nam
+      <input type="radio" name="gt" value="nu"> Nữ
+      <span class="error" id="gtError"></span>
+    </div>
+    <div>
+      <label><input type="checkbox" id="dk"> Đồng ý điều khoản</label>
+      <span class="error" id="dkError"></span>
+    </div>
+    <button type="submit">Đăng ký</button>
+  </form>
+  <div id="ok" class="hidden">
+    <p>Đăng ký thành công! 🎉</p>
+    <p>Xin chào <strong id="ten"></strong></p>
+  </div>
+  <script src="main.js"></script>
+    
+</body>
+</html>

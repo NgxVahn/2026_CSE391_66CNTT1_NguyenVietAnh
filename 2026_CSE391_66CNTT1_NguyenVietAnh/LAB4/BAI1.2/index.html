@@ -4,28 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANG DIEM SINH VIEN</title>
-    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
+    <div class="container">
     <h2>Quản lý điểm sinh viên</h2>
+
     <div class="form-row">
       <input type="text" id="hoTen" placeholder="Họ tên">
       <input type="number" id="diem" placeholder="Điểm (0 - 10)" min="0" max="10" step="0.1">
       <button id="btnThem">Thêm</button>
     </div>
 
-    <table>
+    <div class="filter-row">
+      <input type="text" id="search" placeholder="Tìm theo tên...">
+      <select id="filterXepLoai">
+        <option value="all">Tất cả</option>
+        <option value="Giỏi">Giỏi</option>
+        <option value="Khá">Khá</option>
+        <option value="Trung bình">Trung bình</option>
+        <option value="Yếu">Yếu</option>
+      </select>
+    </div>
+
+     <table>
       <thead>
         <tr>
           <th>STT</th>
           <th>Họ tên</th>
-          <th>Điểm</th>
+          <th id="thDiem" class="sortable">Điểm</th>
           <th>Xếp loại</th>
           <th>Thao tác</th>
         </tr>
       </thead>
       <tbody id="tbodySinhVien">
+        <!-- Render bằng JS -->
       </tbody>
     </table>
 
@@ -36,5 +49,6 @@
   </div>
 
   <script src="main.js"></script>
+    
 </body>
 </html>

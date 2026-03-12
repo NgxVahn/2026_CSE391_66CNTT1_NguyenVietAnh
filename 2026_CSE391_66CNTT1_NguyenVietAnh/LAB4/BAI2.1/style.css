@@ -1,0 +1,5 @@
+.error { color: red; display: block; min-height: 1.2em; }
+.error:empty { display: none; }
+input.ok { border-color: green; }
+input.bad { border-color: red; }
+.hidden { display: none; }
